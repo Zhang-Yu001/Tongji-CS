@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录和注册</title>
+    <style>
+        body {
+            background-image: url('/images/background.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container.hidden {
+            display: none;
+        }
+
+        .form-container.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container" id="login-form">
+            <h2>登录</h2>
+            <form th:action="@{/login}" method="post">
+                <div>
+                    <label for="username">用户名：</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="password">密码：</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div>
+                    <button type="submit">登录</button>
+                </div>
+            </form>
+            <p th:if="${param.error}">无效的用户名或密码</p>
+            <p th:if="${param.logout}">您已成功退出</p>
+            <p>还没有账号？ <a href="#" onclick="showRegisterForm()">注册</a></p>
+        </div>
+
+        <div class="form-container hidden" id="register-form">
+            <h2>注册</h2>
+            <form th:action="@{/register}" method="post">
+                <div>
+                    <label for="register-username">用户名：</label>
+                    <input type="text" id="register-username" name="username" required>
+                </div>
+                <div>
+                    <label for="register-password">密码：</label>
+                    <input type="password" id="register-password" name="password" required>
+                </div>
+                <div>
+                    <label for="register-email">邮箱：</label>
+                    <input type="email" id="register-email" name="email" required>
+                </div>
+                <div>
+                    <button type="submit">注册</button>
+                </div>
+            </form>
+            <p>已经有账号了？ <a href="#" onclick="showLoginForm()">登录</a></p>
+        </div>
+    </div>
+
+    <script>
+        function showRegisterForm() {
+            document.getElementById('login-form').classList.add('hidden');
+            document.getElementById('register-form').classList.remove('hidden');
+        }
+
+        function showLoginForm() {
+            document.getElementById('login-form').classList.remove('hidden');
+            document.getElementById('register-form').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
