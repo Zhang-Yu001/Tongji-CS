@@ -1,0 +1,5 @@
+{
+"markdown-pdf.displayHeaderFooter": false,
+    "markdown-pdf.headerTemplate": "", // 留空以隐藏页首
+    "markdown-pdf.footerTemplate": "<span style='font-size:10px; margin-left:20px;'>Page <span class='pageNumber'></span> of <span class='totalPages'></span></span>" // 示例页脚内容
+}

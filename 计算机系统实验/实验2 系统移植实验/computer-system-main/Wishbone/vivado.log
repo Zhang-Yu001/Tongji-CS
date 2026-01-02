@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jun 15 09:19:38 2025
+# Process ID: 18844
+# Current directory: C:/Users/张 宇/Desktop/blue/计算机系统实验/实验2、系统移植实验/computer-system-main/Wishbone
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10788 C:\Users\张 宇\Desktop\blue\计算机系统实验\实验2、系统移植实验\computer-system-main\Wishbone\Wishbone.xpr
+# Log file: C:/Users/张 宇/Desktop/blue/计算机系统实验/实验2、系统移植实验/computer-system-main/Wishbone/vivado.log
+# Journal file: C:/Users/张 宇/Desktop/blue/计算机系统实验/实验2、系统移植实验/computer-system-main/Wishbone\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/张 宇/Desktop/blue/计算机系统实验/实验2、系统移植实验/computer-system-main/Wishbone/Wishbone.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/张 宇/Desktop/blue/计算机系统实验/实验2、系统移植实验/computer-system-main/Wishbone'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1113.438 ; gain = 0.000
+update_compile_order -fileset sources_1
+save_project_as usosII E:/usosII -force
+import_files
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'clk_wiz_200MHZ'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'clk_wiz_200MHZ'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'clk_wiz_25MHZ'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'clk_wiz_25MHZ'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'clk_wiz_5MHZ'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'clk_wiz_5MHZ'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sd_buf'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sd_buf'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sdram'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sdram'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 15 09:42:55 2025...

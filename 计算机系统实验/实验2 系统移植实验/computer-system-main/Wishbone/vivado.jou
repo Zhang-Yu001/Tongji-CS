@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jun 15 09:19:38 2025
+# Process ID: 18844
+# Current directory: C:/Users/张 宇/Desktop/blue/计算机系统实验/实验2、系统移植实验/computer-system-main/Wishbone
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10788 C:\Users\张 宇\Desktop\blue\计算机系统实验\实验2、系统移植实验\computer-system-main\Wishbone\Wishbone.xpr
+# Log file: C:/Users/张 宇/Desktop/blue/计算机系统实验/实验2、系统移植实验/computer-system-main/Wishbone/vivado.log
+# Journal file: C:/Users/张 宇/Desktop/blue/计算机系统实验/实验2、系统移植实验/computer-system-main/Wishbone\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/张 宇/Desktop/blue/计算机系统实验/实验2、系统移植实验/computer-system-main/Wishbone/Wishbone.xpr}
+update_compile_order -fileset sources_1
+save_project_as usosII E:/usosII -force
+import_files
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

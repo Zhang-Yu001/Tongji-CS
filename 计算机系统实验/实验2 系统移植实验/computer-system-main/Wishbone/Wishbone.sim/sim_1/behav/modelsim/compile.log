@@ -1,0 +1,33 @@
+# do {cpu_test_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xpm".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Model Technology ModelSim PE vmap 10.4c Lib Mapping Utility 2015.07 Jul 20 2015
+# vmap xpm modelsim_lib/msim/xpm 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.4c Lib Mapping Utility 2015.07 Jul 20 2015
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 10:18:28 on May 27,2025
+# vlog -incr -sv -work xpm E:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv 
+# init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/张 宇/Desktop/blue/计算机系统实验/实验2、系统移植实验/computer-system-main/Wishbone/Wishbone.sim/sim_1/behav/modelsim/modelsim_lib/msim/xpm/_lib.qdb): unable to open database file
+# mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+# ** Fatal: (vlog-9) Problem while writing token file "C:/Users/张 宇/Desktop/blue/计算机系统实验/实验2、系统移植实验/computer-system-main/Wishbone/Wishbone.sim/sim_1/behav/modelsim/modelsim_lib/msim/xpm/_temp/vlogrxsq7x".
+# 
+# 系统找不到指定的路径。 (GetLastError() = 3)
+# ** Error: E:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv(152): Verilog Compiler exiting
+# End time: 10:18:28 on May 27,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: E:/modeltech_pe_10.4c/win32pe/vlog failed.
+# Error in macro ./cpu_test_compile.do line 20
+# E:/modeltech_pe_10.4c/win32pe/vlog failed.
+#     while executing
+# "vlog  -incr -sv -work xpm  \
+# "E:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+# "
