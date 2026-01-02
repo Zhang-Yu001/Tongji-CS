@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>学院网站</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">首页</a>
+      <a href="course.html">教学</a>
+      <a href="research.html">科研</a>
+      <a href="information.html">信息传递</a>
+      <a href="contact.html">联系我们</a>
+    </nav>
+    <main>
+      <div style="background:linear-gradient(90deg,#2563eb 60%,#38bdf8 100%);color:#fff;padding:2em 1em;border-radius:var(--border-radius);text-align:center;margin-bottom:2em;">
+        <h1 style="margin-bottom:0.5em;color:#ffe066;">欢迎来到同济大学计算机科学与技术学院网站！</h1>
+        <p style="font-size:1.2em;">致力于培养计算机科学领域的创新型人才，推动前沿科技研究与社会服务。</p>
+      </div>
+      <section style="margin-bottom:2em;">
+        <h2>学院简介</h2>
+        <p>同济大学计算机科学与技术学院拥有雄厚的师资力量和丰富的教学资源，涵盖人工智能、大数据、网络安全等多个研究方向。学院注重理论与实践结合，积极开展国内外学术交流与合作。</p>
+      </section>
+      <section style="margin-bottom:2em;">
+        <h2>新闻动态</h2>
+        <ul style="padding-left:1.2em;">
+          <li>2025-05-10：同济大学计算机科学与技术学院举办人工智能前沿论坛</li>
+          <li>2025-04-28：学院师生在全国大学生程序设计竞赛中获奖</li>
+          <li>2025-04-15：新一届学生会成立，欢迎新成员加入</li>
+        </ul>
+      </section>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:2em;margin-top:2em;">
+        <div class="block" onclick="navigateTo('course')">
+          <div class="icon">📚</div>
+          <h3>教学</h3>
+          <p>课程信息、教学资源、在线课堂</p>
+        </div>
+        <div class="block" onclick="navigateTo('research')">
+          <div class="icon">🔬</div>
+          <h3>科研</h3>
+          <p>科研项目、学术论文、研究成果</p>
+        </div>
+        <div class="block" onclick="navigateTo('information')">
+          <div class="icon">📢</div>
+          <h3>信息传递</h3>
+          <p>通知公告、校园新闻、交流平台</p>
+        </div>
+        <div class="block" onclick="navigateTo('contact')">
+          <div class="icon">☎️</div>
+          <h3>联系我们</h3>
+          <p>联系方式、反馈意见、在线客服</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      &copy; 2025 同济大学计算机科学与技术学院
+    </footer>
+    <script>
+      function navigateTo(section) {
+        window.location.href = section + ".html";
+      }
+    </script>
+  </body>
+</html>

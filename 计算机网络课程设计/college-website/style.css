@@ -1,0 +1,113 @@
+/* 现代简洁学院风统一样式表 */
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #f1f5f9;
+  --accent-color: #38bdf8;
+  --text-color: #22223b;
+  --bg-color: #fff;
+  --nav-bg: #1e293b;
+  --nav-text: #fff;
+  --footer-bg: #1e293b;
+  --footer-text: #fff;
+  --border-radius: 8px;
+  --transition: 0.3s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+header, nav {
+  background: var(--nav-bg);
+  color: var(--nav-text);
+  padding: 0.5em 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+nav a {
+  color: var(--nav-text);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5em 1em;
+  border-radius: var(--border-radius);
+  transition: background var(--transition);
+}
+
+nav a:hover {
+  background: var(--accent-color);
+  color: var(--nav-bg);
+}
+
+main {
+  max-width: 900px;
+  margin: 2em auto;
+  background: var(--secondary-color);
+  padding: 2em;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 16px rgba(30,41,59,0.08);
+}
+
+h1, h2, h3, h4 {
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+button, .btn {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.5em 1.5em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+button:hover, .btn:hover {
+  background: var(--accent-color);
+}
+
+input, textarea, select {
+  border: 1px solid #cbd5e1;
+  border-radius: var(--border-radius);
+  padding: 0.5em;
+  font-size: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border var(--transition);
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 3em;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1em;
+  }
+  nav {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+} 
